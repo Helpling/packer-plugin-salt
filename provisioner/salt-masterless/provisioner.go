@@ -101,7 +101,7 @@ var guestOSTypeConfigs = map[string]guestOSTypeConfig{
 		tempDir:           "/tmp/salt",
 		stateRoot:         "/srv/salt",
 		pillarRoot:        "/srv/pillar",
-		bootstrapFetchCmd: "curl -L https://bootstrap.saltproject.io -o /tmp/install_salt.sh || wget -O /tmp/install_salt.sh https://bootstrap.saltproject.io",
+		bootstrapFetchCmd: "curl -L https://github.com/saltstack/salt-bootstrap/releases/latest/download/bootstrap-salt.sh -o /tmp/install_salt.sh || wget -O /tmp/install_salt.sh https://github.com/saltstack/salt-bootstrap/releases/latest/download/bootstrap-salt.sh",
 		bootstrapRunCmd:   "sh /tmp/install_salt.sh",
 	},
 	guestexec.WindowsOSType: {
